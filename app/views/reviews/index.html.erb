@@ -1,1 +1,10 @@
-index.html.erb
+<h1>Review</h1>
+
+
+
+<ul>
+<% @review.each do |rest| %>
+<li><%= rest.name %></li>
+<%= rest.category %>
+<% end %>
+</ul>
